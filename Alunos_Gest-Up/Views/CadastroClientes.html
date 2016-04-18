@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        form { margin: 5px auto; max-width: 500px; }
+            form div { margin: 5px 0; }
+            form label{display: block}
+            form input, form select, form textarea { height: 30px; max-width: 400px; border-radius: 6px; padding: 5px; }
+            form select { min-width: 176px; }
+            form textarea { height: 150px;}
+
+        .btn{width: 200px; background-color:gray; color: #FFFFFF;}
+
+        @media screen and (min-width: 400px)
+        {
+            form label { display: inline-block; width: 200px; vertical-align: top}
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>CPF</label>
+            <input type="text" name="cpf" placeholder="CPF" />
+        </div>
+
+        <div>
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Nome" />
+        </div>
+
+        <div>
+            <label>Endereço</label>
+            <input type="text" name="end" placeholder="Endereço" />
+        </div>
+
+        <div>
+            <label>Número/Complemento</label>
+            <input type="text" name="numero" placeholder="Numero/Complemento" />
+        </div>
+
+        <div>
+            <label>Cidade</label>
+            <input type="text" name="cidade" placeholder="Cidade" />
+        </div>
+
+        <div>
+            <label>CEP</label>
+            <input type="text" maxlength="9" placeholder="Cep - Ex: 99999-999" />
+        </div>
+
+        <div>
+            <label>UF</label>
+            <select name="UF">
+                <option value="--">Selecione</option>
+                <option value="RS">RS</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Telefone</label>
+            <input type="tel" name="telefone" placeholder="Telefone - Ex:(51) 9999-9999" />
+        </div>
+
+        <div>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="E-mail" />
+        </div>
+
+        <div>
+            <label>Observações</label>
+            <textarea placeholder="Observações"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" class="btn"/>
+        </div>
+    </form>
+</body>
+</html>
